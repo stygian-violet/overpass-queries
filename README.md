@@ -17,7 +17,7 @@
 
 ## Contents
 
-| Query | Files | Style | Notes |
+| Query | Files | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
 |--|--|--|--|
 | Abandoned objects | [area](src/abandoned_in_area.overpassql) [bbox](src/abandoned_in_bbox.overpassql) | <img src="img/style/abandoned.png" alt="Style" width="200"/> | [Lifecycle prefixes](https://wiki.openstreetmap.org/wiki/Lifecycle_prefix#Stages_of_decay) |
 | Administrative boundaries | [bbox](src/admin_level_in_bbox.overpassql) | <img src="img/style/admin_level.png" alt="Style" width="200"/> | [Country specific values ​​of the key `admin_level=*`](https://wiki.openstreetmap.org/wiki/Tag:boundary=administrative#Country_specific_values_%E2%80%8B%E2%80%8Bof_the_key_admin_level=*) |
