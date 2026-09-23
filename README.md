@@ -17,23 +17,139 @@
 
 ## Contents
 
-| Query | Files | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Notes |
-|--|--|--|--|
-| Abandoned objects | [area](src/abandoned_in_area.overpassql) [bbox](src/abandoned_in_bbox.overpassql) | <img src="img/style/abandoned.png" alt="Style" width="200"/> | [Lifecycle prefixes](https://wiki.openstreetmap.org/wiki/Lifecycle_prefix#Stages_of_decay) |
-| Administrative boundaries | [bbox](src/admin_level_in_bbox.overpassql) | <img src="img/style/admin_level.png" alt="Style" width="200"/> | [Country specific values ​​of the key `admin_level=*`](https://wiki.openstreetmap.org/wiki/Tag:boundary=administrative#Country_specific_values_%E2%80%8B%E2%80%8Bof_the_key_admin_level=*) |
-| Bridges | [bbox](src/bridges_in_bbox.overpassql) | <img src="img/style/bridges.png" alt="Style" width="200"/> | WIP |
-| Bunkers | [area](src/bunkers_in_area.overpassql) [bbox](src/bunkers_in_bbox.overpassql) | <img src="img/style/bunkers.png" alt="Style" width="200"/> | |
-| Caves | [area](src/caves_in_area.overpassql) [bbox](src/caves_in_bbox.overpassql) | <img src="img/style/caves.png" alt="Style" width="200"/> | |
-| Cryptocurrency ATMs | [area](src/crypto_atms_in_area.overpassql) [bbox](src/crypto_atms_in_bbox.overpassql) | <img src="img/style/crypto_atms.png" alt="Style" width="200"/> | |
-| Fixme | [area](src/fixme_in_area.overpassql) [bbox](src/fixme_in_bbox.overpassql) | <img src="img/style/fixme.png" alt="Style" width="200"/> | [Key:fixme](https://wiki.openstreetmap.org/wiki/Key:fixme) |
-| Hazards | [area](src/hazards_in_area.overpassql) [bbox](src/hazards_in_bbox.overpassql) | <img src="img/style/hazards.png" alt="Style" width="200"/> | |
-| Lighthouses and beacons | [area](src/lighthouses_in_area.overpassql) [bbox](src/lighthouses_in_bbox.overpassql) | <img src="img/style/lighthouses.png" alt="Style" width="200"/> | |
-| Localities | [area](src/localities_in_area.overpassql) [bbox](src/localities_in_bbox.overpassql) | <img src="img/style/localities.png" alt="Style" width="200"/> | [Tag:place=locality](https://wiki.openstreetmap.org/wiki/Tag:place%3Dlocality) |
-| Mines and quarries | [area](src/mines_in_area.overpassql) [bbox](src/mines_in_bbox.overpassql) | <img src="img/style/mines.png" alt="Style" width="200"/> | |
-| Mortuaries, crematoria and graveyards | [area](src/mortuaries_in_area.overpassql) [bbox](src/mortuaries_in_bbox.overpassql) | <img src="img/style/abandoned.png" alt="Style" width="200"/> | ‌‍‌‍‌‍‍‍‌‍‍‌‍‌‌‌█████ ‌‍‍‌‌‌‌‍████‌‍‍‍‌‍‌‌‌‌‍‌‌‌‌‌ ‌‍‍‌‌‌‌‍████‌‍‍‍‌‌‍‌‌‍‍‌‌‍‌‍‌‌‍‌‌‌‌‌ ‌‍‍‍‍‌‌‍‌‍‍‌‍‍‍‍‌‍‍‍‌‍‌‍█████‌‌‍‌‌‌‌‌‌‍‍‌‌‍‌‌‌‍‍‌‍‍‍‍‌‍‍‌‍‌‌‍‌‍‍‌‍‍‍‌‌‍‍‌‌‍‍‍‌‌‍‌‌‌‌‌ █████‌‍‍‌‍‌‌‌‌‍‍‌‌‍‌‍ ‌‍‍‍‌‌‍‌██‌‍‍‌‌‍‌‍ ████‌‌‍‍‍‍‍‍ ‌‌‌‌‍‌‍‌███ |
-| Notes | [area](src/notes_in_area.overpassql) [bbox](src/notes_in_bbox.overpassql) | <img src="img/style/notes.png" alt="Style" width="200"/> | [Key:note](https://wiki.openstreetmap.org/wiki/Key:note) |
-| Radio | [area](src/radio_in_area.overpassql) [bbox](src/radio_in_bbox.overpassql) | <img src="img/style/radio.png" alt="Style" width="200"/> | |
-| Was | [area](src/was_in_area.overpassql) [bbox](src/was_in_bbox.overpassql) | <img src="img/style/was.png" alt="Style" width="200"/> | [Key:was:*](https://wiki.openstreetmap.org/wiki/Key:was:*) |
+<table>
+	<tr>
+		<th>Query</th>
+		<th colspan="2">Files</th>
+		<th width="250">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</th>
+		<th>Notes</th>
+	</tr>
+	<tr>
+		<td>Abandoned objects</td>
+		<td><a href="src/abandoned_in_area.overpassql">area</a></td>
+		<td><a href="src/abandoned_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/abandoned.png"></td>
+		<td>
+			<a href="https://wiki.openstreetmap.org/wiki/Lifecycle_prefix#Stages_of_decay">
+				Lifecycle prefixes
+			</a>
+		</td>
+	</tr>
+	<tr>
+		<td>Administrative boundaries</td>
+		<td></td>
+		<td><a href="src/admin_level_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/admin_level.png"></td>
+		<td>
+			<a href="https://wiki.openstreetmap.org/wiki/Tag:boundary%3Dadministrative#Country_specific_values_of_the_key_admin_level%3D*">
+				Country specific values ​​of the key admin_level=*
+			</a>
+		</td>
+	</tr>
+	<tr>
+		<td>Bridges</td>
+		<td></td>
+		<td><a href="src/bridges_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/bridges.png"></td>
+		<td>WIP</td>
+	</tr>
+	<tr>
+		<td>Bunkers</td>
+		<td><a href="src/bunkers_in_area.overpassql">area</a></td>
+		<td><a href="src/bunkers_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/bunkers.png"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Caves</td>
+		<td><a href="src/caves_in_area.overpassql">area</a></td>
+		<td><a href="src/caves_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/caves.png"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Cryptocurrency ATMs</td>
+		<td><a href="src/crypto_atms_in_area.overpassql">area</a></td>
+		<td><a href="src/crypto_atms_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/crypto_atms.png"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Fixme</td>
+		<td><a href="src/fixme_in_area.overpassql">area</a></td>
+		<td><a href="src/fixme_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/fixme.png"></td>
+		<td>
+			<a href="https://wiki.openstreetmap.org/wiki/Key:fixme">Key:fixme</a>
+		</td>
+	</tr>
+	<tr>
+		<td>Hazards</td>
+		<td><a href="src/hazards_in_area.overpassql">area</a></td>
+		<td><a href="src/hazards_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/hazards.png"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Lighthouses and beacons</td>
+		<td><a href="src/lighthouses_in_area.overpassql">area</a></td>
+		<td><a href="src/lighthouses_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/lighthouses.png"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Localities</td>
+		<td><a href="src/localities_in_area.overpassql">area</a></td>
+		<td><a href="src/localities_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/localities.png"></td>
+		<td>
+			<a href="https://wiki.openstreetmap.org/wiki/Tag:place%3Dlocality">
+				Tag:place=locality
+			</a>
+		</td>
+	</tr>
+	<tr>
+		<td>Mines and quarries</td>
+		<td><a href="src/mines_in_area.overpassql">area</a></td>
+		<td><a href="src/mines_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/mines.png"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Mortuaries, crematoria and graveyards</td>
+		<td><a href="src/mortuaries_in_area.overpassql">area</a></td>
+		<td><a href="src/mortuaries_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/mortuaries.png"></td>
+		<td>‌‍‌‍‌‍‍‍‌‍‍‌‍‌‌‌█████ ‌‍‍‌‌‌‌‍████‌‍‍‍‌‍‌‌‌‌‍‌‌‌‌‌ ‌‍‍‌‌‌‌‍████‌‍‍‍‌‌‍‌‌‍‍‌‌‍‌‍‌‌‍‌‌‌‌‌ ‌‍‍‍‍‌‌‍‌‍‍‌‍‍‍‍‌‍‍‍‌‍‌‍█████‌‌‍‌‌‌‌‌‌‍‍‌‌‍‌‌‌‍‍‌‍‍‍‍‌‍‍‌‍‌‌‍‌‍‍‌‍‍‍‌‌‍‍‌‌‍‍‍‌‌‍‌‌‌‌‌ █████‌‍‍‌‍‌‌‌‌‍‍‌‌‍‌‍ ‌‍‍‍‌‌‍‌██‌‍‍‌‌‍‌‍ ████‌‌‍‍‍‍‍‍ ‌‌‌‌‍‌‍‌███</td>
+	</tr>
+	<tr>
+		<td>Notes</td>
+		<td><a href="src/notes_in_area.overpassql">area</a></td>
+		<td><a href="src/notes_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/notes.png"></td>
+		<td>
+			<a href="https://wiki.openstreetmap.org/wiki/Key:note">Key:note</a>
+		</td>
+	</tr>
+	<tr>
+		<td>Radio</td>
+		<td><a href="src/radio_in_area.overpassql">area</a></td>
+		<td><a href="src/radio_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/radio.png"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Was</td>
+		<td><a href="src/was_in_area.overpassql">area</a></td>
+		<td><a href="src/was_in_bbox.overpassql">bbox</a></td>
+		<td><img alt="Style" src="img/style/was.png"></td>
+		<td>
+			<a href="https://wiki.openstreetmap.org/wiki/Key:was:*">Key:was:*</a>
+		</td>
+	</tr>
+</table>
 
 ## Development
 
@@ -67,9 +183,3 @@ make styles
 - [Nominatim](https://nominatim.openstreetmap.org/ui/search.html)
 - [Taginfo](https://taginfo.openstreetmap.org/)
 - [TagFinder](https://tagfinder.osm.ch/)
-- [Emacs mode](https://github.com/stygian-violet/overpassql-mode)
-- [GeoJSON editor](https://geojson.io/)
-
-## Licenses
-
-- [`overpass-queries`](LICENSE)
