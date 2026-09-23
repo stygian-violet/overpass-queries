@@ -183,3 +183,9 @@ make styles
 - [Nominatim](https://nominatim.openstreetmap.org/ui/search.html)
 - [Taginfo](https://taginfo.openstreetmap.org/)
 - [TagFinder](https://tagfinder.osm.ch/)
+- [Emacs mode](https://github.com/stygian-violet/overpassql-mode)
+- [GeoJSON editor](https://geojson.io/)
+
+## Licenses
+
+- [`overpass-queries`](LICENSE)
